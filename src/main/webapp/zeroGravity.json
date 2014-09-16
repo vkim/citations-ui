@@ -1,0 +1,728 @@
+[
+    {
+        "name": "Paper name",
+        "count": 79,
+        "key": "async",
+        "pages": [
+            {
+                "name": "Pandemic Influenza: Is an Antiviral Response Realistic? ",
+                "title": "Pandemic Influenza: Is an Antiviral Response Realistic? ",
+                "authors": "Hayden FG.",
+                "url": "http://excelramblings.blogspot.com/2014/05/parsecom-as-substitute-for-scriptdb-in.html"
+            },
+            {
+                "name": "Parse.com as a substitute for ScriptDB in Google Apps Script",
+                "title": "Parse.com as a substitute for ScriptDB in Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2014/05/parsecom-as-substitute-for-scriptdb-in.html"
+            },
+            {
+                "name": "Eurovision song contest voting oddities - interactive visualization",
+                "key": "3387730798287808432",
+                "title": "Eurovision song contest voting oddities - interactive visualization",
+                "url": "http://excelramblings.blogspot.com/2014/05/eurovision-song-contest-voting-oddities.html"
+            },
+            {
+                "name": "Dealing with Unix timestamps in Excel",
+                "key": "3060013286872872681",
+                "title": "Dealing with Unix timestamps in Excel",
+                "url": "http://excelramblings.blogspot.com/2013/12/dealing-with-unix-timestamps-in-excel.html"
+            },
+            {
+                "name": "Tracking your Excel Workbooks with Google Analytics",
+                "key": "8719756569439397730",
+                "title": "Tracking your Excel Workbooks with Google Analytics",
+                "url": "http://excelramblings.blogspot.com/2013/11/tracking-your-excel-workbooks-with.html"
+            },
+            {
+                "name": "Mitigating for changes in REST API rules and formats",
+                "key": "6535599039394459349",
+                "title": "Mitigating for changes in REST API rules and formats",
+                "url": "http://excelramblings.blogspot.com/2013/11/mitigating-for-changes-in-rest-api.html"
+            },
+            {
+                "name": "XML and JSON conversion in VBA ",
+                "key": "8631701126612541596",
+                "title": "XML and JSON conversion in VBA ",
+                "url": "http://excelramblings.blogspot.com/2013/10/xml-and-json-conversion-in-vba.html"
+            },
+            {
+                "name": "REST access to list management cloud based functions - plus a VBA example",
+                "key": "9125639579444215862",
+                "title": "REST access to list management cloud based functions - plus a VBA example",
+                "url": "http://excelramblings.blogspot.com/2013/09/rest-access-to-list-management-cloud.html"
+            },
+            {
+                "name": "What does Google Autocomplete show all over the world ?",
+                "key": "8388159511072830347",
+                "title": "What does Google Autocomplete show all over the world ?",
+                "url": "http://excelramblings.blogspot.com/2013/08/what-does-google-autocomplete-show-all.html"
+            },
+            {
+                "name": "Google Docs to Excel Asynchronously",
+                "key": "6143895170557586170",
+                "title": "Google Docs to Excel Asynchronously",
+                "url": "http://excelramblings.blogspot.com/2013/08/google-docs-to-excel-asynchronously.html"
+            },
+            {
+                "name": "Using ScriptDB as a noSQL database for non-Google Apps Script clients",
+                "key": "4984756556960647894",
+                "title": "Using ScriptDB as a noSQL database for non-Google Apps Script clients",
+                "url": "http://excelramblings.blogspot.com/2013/07/using-scriptdb-as-nosql-database-for.html"
+            },
+            {
+                "name": "Concept browser for site navigation with d3",
+                "key": "2591807608450374884",
+                "title": "Concept browser for site navigation with d3",
+                "url": "http://excelramblings.blogspot.com/2013/07/concept-browser-for-site-navigation.html"
+            },
+            {
+                "name": "Sankey diagrams direct from Excel - update",
+                "key": "7899286130266944386",
+                "title": "Sankey diagrams direct from Excel - update",
+                "url": "http://excelramblings.blogspot.com/2013/07/sankey-diagrams-direct-from-excel-update.html"
+            },
+            {
+                "name": "Exploring blogs and sites by d3 tag visualization and effect on site visits",
+                "key": "7778365833610693391",
+                "title": "Exploring blogs and sites by d3 tag visualization and effect on site visits",
+                "url": "http://excelramblings.blogspot.com/2013/06/exploring-blogs-and-sites-by-d3-tag.html"
+            },
+            {
+                "name": "Google Fusion Big Data and D3 integration: flight data visualization",
+                "key": "8192496343933999913",
+                "title": "Google Fusion Big Data and D3 integration: flight data visualization",
+                "url": "http://excelramblings.blogspot.com/2013/06/google-fusion-big-data-and-d3.html"
+            },
+            {
+                "name": "jQuery promises and exponential backoff",
+                "key": "9187220054075379583",
+                "title": "jQuery promises and exponential backoff",
+                "url": "http://excelramblings.blogspot.com/2013/06/jquery-promises-and-exponential-backoff.html"
+            },
+            {
+                "name": "Playing around with Tableau Public",
+                "key": "1273340700771095944",
+                "title": "Playing around with Tableau Public",
+                "url": "http://excelramblings.blogspot.com/2013/06/playing-around-with-tableau-public.html"
+            },
+            {
+                "name": "Visualization of Sites to Tags with d3.js",
+                "key": "5607957530623178388",
+                "title": "Visualization of Sites to Tags with d3.js",
+                "url": "http://excelramblings.blogspot.com/2013/06/visualization-of-sites-to-tags-with-d3js.html"
+            },
+            {
+                "name": "Create biased random test data in VBA",
+                "key": "7694682231502772662",
+                "title": "Create biased random test data in VBA",
+                "url": "http://excelramblings.blogspot.com/2013/05/create-biased-random-test-data-in-vba.html"
+            },
+            {
+                "name": "Digest authentication and Google Apps Script",
+                "key": "1877368420429228536",
+                "title": "Digest authentication and Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2013/05/digest-authentication-and-google-apps.html"
+            },
+            {
+                "name": "parse.com and d3.js mashup",
+                "key": "1440288476990718302",
+                "title": "parse.com and d3.js mashup",
+                "url": "http://excelramblings.blogspot.com/2013/05/parsecom-and-d3js-mashup.html"
+            },
+            {
+                "name": "Mashing up electoral data - follow on from oUseful post",
+                "key": "2877216136096344149",
+                "title": "Mashing up electoral data - follow on from oUseful post",
+                "url": "http://excelramblings.blogspot.com/2013/05/mashing-up-electoral-data-follow-on.html"
+            },
+            {
+                "name": "Finding nearest match and other palettes in other fixed color schemes",
+                "key": "8422077368465527413",
+                "title": "Finding nearest match and other palettes in other fixed color schemes",
+                "url": "http://excelramblings.blogspot.com/2013/04/finding-nearest-match-and-other.html"
+            },
+            {
+                "name": "Parse.com and ScriptDB performance comparison",
+                "key": "392424253892348032",
+                "title": "Parse.com and ScriptDB performance comparison",
+                "url": "http://excelramblings.blogspot.com/2013/04/parsecom-and-scriptdb-performance.html"
+            },
+            {
+                "name": "More playing around with color, parse.com, scriptDb and Google Apps Script",
+                "key": "2883844698086205263",
+                "title": "More playing around with color, parse.com, scriptDb and Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2013/04/more-playing-around-with-color-parsecom.html"
+            },
+            {
+                "name": "Very interesting GAS performance results - run locally using htmlservice",
+                "key": "7600185462534995089",
+                "title": "Very interesting GAS performance results - run locally using htmlservice",
+                "url": "http://excelramblings.blogspot.com/2013/04/very-interesting-gas-performance.html"
+            },
+            {
+                "name": "Executing Google Apps Script Code directly in javascript - GAS as a CDN",
+                "key": "8140234695385851924",
+                "title": "Executing Google Apps Script Code directly in javascript - GAS as a CDN",
+                "url": "http://excelramblings.blogspot.com/2013/04/executing-google-apps-script-code.html"
+            },
+            {
+                "name": "Google Apps Script \"execution time exceeded\" woes",
+                "key": "113099679383588473",
+                "title": "Google Apps Script \"execution time exceeded\" woes",
+                "url": "http://excelramblings.blogspot.com/2013/04/google-apps-script-execution-time.html"
+            },
+            {
+                "name": "Google Apps Script Color Space Conversions.",
+                "key": "9076157104544212088",
+                "title": "Google Apps Script Color Space Conversions.",
+                "url": "http://excelramblings.blogspot.com/2013/04/in-google-apps-script-color-functions.html"
+            },
+            {
+                "name": "Automatic documentation from VBA - including function arguments",
+                "key": "303434109958137808",
+                "title": "Automatic documentation from VBA - including function arguments",
+                "url": "http://excelramblings.blogspot.com/2013/03/automatic-documentation-from-vba.html"
+            },
+            {
+                "name": "Using jSon/javaScript like structures in VBA",
+                "key": "8274971709723588104",
+                "title": "Using jSon/javaScript like structures in VBA",
+                "url": "http://excelramblings.blogspot.com/2013/03/using-jsonjavascript-like-structures-in.html"
+            },
+            {
+                "name": "VBA procedures for CIE LabLch and HSL color scheming",
+                "key": "4885079350110396129",
+                "title": "VBA procedures for CIE LabLch and HSL color scheming",
+                "url": "http://excelramblings.blogspot.com/2013/03/vba-procedures-for-cie-lablch-and-hsl.html"
+            },
+            {
+                "name": "Inherit link colors from cells - D3 sankey from Excel",
+                "key": "726547650393306593",
+                "title": "Inherit link colors from cells - D3 sankey from Excel",
+                "url": "http://excelramblings.blogspot.com/2013/03/inherit-link-colors-from-cells-d3.html"
+            },
+            {
+                "name": "API of the Day: facebook fql direct from Excel and Google APPs",
+                "key": "5123811479853799614",
+                "title": "API of the Day: facebook fql direct from Excel and Google APPs",
+                "url": "http://excelramblings.blogspot.com/2013/02/api-of-day-facebook-fql-direct-from.html"
+            },
+            {
+                "name": "GAS openbadges infrastructure - playing around with images and promises",
+                "key": "1688169144459314238",
+                "title": "GAS openbadges infrastructure - playing around with images and promises",
+                "url": "http://excelramblings.blogspot.com/2013/02/gas-openbadges-infrastructure-playing.html"
+            },
+            {
+                "name": "Using Google Cache to persist data across function calls",
+                "key": "5171309153881224161",
+                "title": "Using Google Cache to persist data across function calls",
+                "url": "http://excelramblings.blogspot.com/2012/11/using-google-cache-to-persist-data.html"
+            },
+            {
+                "name": "Google Apps Script Liberation - publishing your stuff",
+                "key": "1235082730654703426",
+                "title": "Google Apps Script Liberation - publishing your stuff",
+                "url": "http://excelramblings.blogspot.com/2012/11/google-apps-script-liberation.html"
+            },
+            {
+                "name": "Publishing Google Apps Script code snippets",
+                "key": "8509622422164774508",
+                "title": "Publishing Google Apps Script code snippets",
+                "url": "http://excelramblings.blogspot.com/2012/11/publishing-google-apps-script-code.html"
+            },
+            {
+                "name": "Google Apps Script - a new day - a new feature",
+                "key": "1277895260449630214",
+                "title": "Google Apps Script - a new day - a new feature",
+                "url": "http://excelramblings.blogspot.com/2012/11/google-apps-script-new-day-new-feature.html"
+            },
+            {
+                "name": "Delegating processing to the cloud from Excel and other plafforms",
+                "key": "5084915138686054565",
+                "title": "Delegating processing to the cloud from Excel and other plafforms",
+                "url": "http://excelramblings.blogspot.com/2012/11/delegating-processing-to-cloud-from.html"
+            },
+            {
+                "name": "Keeping all those Google Apps script 'shortcuts' under control",
+                "key": "5098197221478856945",
+                "title": "Keeping all those Google Apps script 'shortcuts' under control",
+                "url": "http://excelramblings.blogspot.com/2012/11/keeping-all-those-google-apps-script.html"
+            },
+            {
+                "name": "Somewhere to keep those API keys: google apps script rest library entry",
+                "key": "2496652094240262709",
+                "title": "Somewhere to keep those API keys: google apps script rest library entry",
+                "url": "http://excelramblings.blogspot.com/2012/10/somewhere-to-keep-those-api-keys-google.html"
+            },
+            {
+                "name": "API library entry of the day: use builtwith.com to see how websites are built",
+                "key": "3359858520667095768",
+                "title": "API library entry of the day: use builtwith.com to see how websites are built",
+                "url": "http://excelramblings.blogspot.com/2012/10/api-library-entry-of-day-use.html"
+            },
+            {
+                "name": "Shortening a string, but keeping it unique: Google Apps Script Caching Keys",
+                "key": "3738015269036481659",
+                "title": "Shortening a string, but keeping it unique: Google Apps Script Caching Keys",
+                "url": "http://excelramblings.blogspot.com/2012/10/shortening-string-but-keeping-it-unique.html"
+            },
+            {
+                "name": "Google Caching and faking jsonp ",
+                "key": "6818644533368943143",
+                "title": "Google Caching and faking jsonp ",
+                "url": "http://excelramblings.blogspot.com/2012/10/google-caching-and-faking-jsonp.html"
+            },
+            {
+                "name": "Is Microsoft's Office and Windows makeover another stairway to nowhere?",
+                "key": "188276158587452046",
+                "title": "Is Microsoft's Office and Windows makeover another stairway to nowhere?",
+                "url": "http://excelramblings.blogspot.com/2012/10/is-microsofts-office-and-windows.html"
+            },
+            {
+                "name": "Batman plot in Excel",
+                "key": "5658550406568981102",
+                "title": "Batman plot in Excel",
+                "url": "http://excelramblings.blogspot.com/2012/10/batman-plot-in-excel.html"
+            },
+            {
+                "name": "Plotting equations in Excel",
+                "key": "1818756011967663323",
+                "title": "Plotting equations in Excel",
+                "url": "http://excelramblings.blogspot.com/2012/10/plotting-equations-in-excel.html"
+            },
+            {
+                "name": "Storing and serving up images from scriptDB with Google Content Service, jSonP and jQuery",
+                "key": "2636991496542940917",
+                "title": "Storing and serving up images from scriptDB with Google Content Service, jSonP and jQuery",
+                "url": "http://excelramblings.blogspot.com/2012/10/storing-and-serving-up-images-from.html"
+            },
+            {
+                "name": "Transforming data for d3 tree",
+                "key": "5274580566090877085",
+                "title": "Transforming data for d3 tree",
+                "url": "http://excelramblings.blogspot.com/2012/10/transforming-data-for-d3-tree.html"
+            },
+            {
+                "name": "if this then that... for vampires",
+                "key": "8334607657264698696",
+                "title": "if this then that... for vampires",
+                "url": "http://excelramblings.blogspot.com/2012/08/if-this-then-that-for-vampires.html"
+            },
+            {
+                "name": "Parse.com as a substitute for ScriptDB in Google Apps Script",
+                "key": "7001401762815725863",
+                "title": "Parse.com as a substitute for ScriptDB in Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2014/05/parsecom-as-substitute-for-scriptdb-in.html"
+            },
+            {
+                "name": "More cool stuff you can do with Google Apps ScriptDb",
+                "key": "7117820866832564927",
+                "title": "More cool stuff you can do with Google Apps ScriptDb",
+                "url": "http://excelramblings.blogspot.com/2014/02/more-cool-stuff-you-can-do-with-google.html"
+            },
+            {
+                "name": "Google Apps Script Content Service - Cross Domain Puzzle",
+                "key": "919790176480577150",
+                "title": "Google Apps Script Content Service - Cross Domain Puzzle",
+                "url": "http://excelramblings.blogspot.com/2014/01/google-apps-script-content-service.html"
+            },
+            {
+                "name": "Tracking your Excel Workbooks with Google Analytics",
+                "key": "8719756569439397730",
+                "title": "Tracking your Excel Workbooks with Google Analytics",
+                "url": "http://excelramblings.blogspot.com/2013/11/tracking-your-excel-workbooks-with.html"
+            },
+            {
+                "name": "Mitigating for changes in REST API rules and formats",
+                "key": "6535599039394459349",
+                "title": "Mitigating for changes in REST API rules and formats",
+                "url": "http://excelramblings.blogspot.com/2013/11/mitigating-for-changes-in-rest-api.html"
+            },
+            {
+                "name": "Digest authentication and Google Apps Script",
+                "key": "1877368420429228536",
+                "title": "Digest authentication and Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2013/05/digest-authentication-and-google-apps.html"
+            },
+            {
+                "name": "Can you make any adSense money with a blog ?",
+                "key": "2047104778478722188",
+                "title": "Can you make any adSense money with a blog ?",
+                "url": "http://excelramblings.blogspot.com/2013/01/can-you-make-any-adsense-money-with-blog.html"
+            },
+            {
+                "name": "I'm awarding badges - Google Apps Script integration with Persona and Mozilla Openbadges",
+                "key": "8132835559313663649",
+                "title": "I'm awarding badges - Google Apps Script integration with Persona and Mozilla Openbadges",
+                "url": "http://excelramblings.blogspot.com/2013/01/im-awarding-badges-google-apps-script.html"
+            },
+            {
+                "name": "Playing around with awarding badges on sites",
+                "key": "4200389365352319045",
+                "title": "Playing around with awarding badges on sites",
+                "url": "http://excelramblings.blogspot.com/2012/12/playing-around-with-awarding-badges-on.html"
+            },
+            {
+                "name": "Keeping all those Google Apps script 'shortcuts' under control",
+                "key": "5098197221478856945",
+                "title": "Keeping all those Google Apps script 'shortcuts' under control",
+                "url": "http://excelramblings.blogspot.com/2012/11/keeping-all-those-google-apps-script.html"
+            },
+            {
+                "name": "Using Google Apps Script as a wrapper for multiple APIs",
+                "key": "1371524193782789941",
+                "title": "Using Google Apps Script as a wrapper for multiple APIs",
+                "url": "http://excelramblings.blogspot.com/2012/10/using-google-apps-script-as-wrapper-for.html"
+            },
+            {
+                "name": "Client oAuth calls using a Google Apps scriptDB lockbox",
+                "key": "465844765155900870",
+                "title": "Client oAuth calls using a Google Apps scriptDB lockbox",
+                "url": "http://excelramblings.blogspot.com/2012/09/client-oauth-calls-using-google-apps.html"
+            },
+            {
+                "name": "using Google Apps ScriptDB as a lockBox",
+                "key": "2655798802137983396",
+                "title": "using Google Apps ScriptDB as a lockBox",
+                "url": "http://excelramblings.blogspot.com/2012/09/using-google-apps-scriptdb-as-lockbox.html"
+            },
+            {
+                "name": "How to do http basic authentication from Excel with VBA",
+                "key": "8242654910804951984",
+                "title": "How to do http basic authentication from Excel with VBA",
+                "url": "http://excelramblings.blogspot.com/2012/05/how-to-do-http-basic-authentication.html"
+            },
+            {
+                "name": "Parse.com as a substitute for ScriptDB in Google Apps Script",
+                "key": "7001401762815725863",
+                "title": "Parse.com as a substitute for ScriptDB in Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2014/05/parsecom-as-substitute-for-scriptdb-in.html"
+            },
+            {
+                "name": "Google Universal Analytics - getting insight into desktop apps too",
+                "key": "3314282933124116679",
+                "title": "Google Universal Analytics - getting insight into desktop apps too",
+                "url": "http://excelramblings.blogspot.com/2014/02/google-universal-analytics-deaktop.html"
+            },
+            {
+                "name": "Tracking your Excel Workbooks with Google Analytics",
+                "key": "8719756569439397730",
+                "title": "Tracking your Excel Workbooks with Google Analytics",
+                "url": "http://excelramblings.blogspot.com/2013/11/tracking-your-excel-workbooks-with.html"
+            },
+            {
+                "name": "Mitigating for changes in REST API rules and formats",
+                "key": "6535599039394459349",
+                "title": "Mitigating for changes in REST API rules and formats",
+                "url": "http://excelramblings.blogspot.com/2013/11/mitigating-for-changes-in-rest-api.html"
+            },
+            {
+                "name": "XML and JSON conversion in VBA ",
+                "key": "8631701126612541596",
+                "title": "XML and JSON conversion in VBA ",
+                "url": "http://excelramblings.blogspot.com/2013/10/xml-and-json-conversion-in-vba.html"
+            },
+            {
+                "name": "Sankey diagrams direct from Excel - update",
+                "key": "7899286130266944386",
+                "title": "Sankey diagrams direct from Excel - update",
+                "url": "http://excelramblings.blogspot.com/2013/07/sankey-diagrams-direct-from-excel-update.html"
+            },
+            {
+                "name": "Connections in electoral data - D3 and VBA follow on from oUseful post",
+                "key": "861843895324588546",
+                "title": "Connections in electoral data - D3 and VBA follow on from oUseful post",
+                "url": "http://excelramblings.blogspot.com/2013/05/connections-in-electoral-data-d3-and.html"
+            },
+            {
+                "name": "Mashing up electoral data - follow on from oUseful post",
+                "key": "2877216136096344149",
+                "title": "Mashing up electoral data - follow on from oUseful post",
+                "url": "http://excelramblings.blogspot.com/2013/05/mashing-up-electoral-data-follow-on.html"
+            },
+            {
+                "name": "More playing around with color, parse.com, scriptDb and Google Apps Script",
+                "key": "2883844698086205263",
+                "title": "More playing around with color, parse.com, scriptDb and Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2013/04/more-playing-around-with-color-parsecom.html"
+            },
+            {
+                "name": "Automatic documentation from VBA - including function arguments",
+                "key": "303434109958137808",
+                "title": "Automatic documentation from VBA - including function arguments",
+                "url": "http://excelramblings.blogspot.com/2013/03/automatic-documentation-from-vba.html"
+            },
+            {
+                "name": "Using jSon/javaScript like structures in VBA",
+                "key": "8274971709723588104",
+                "title": "Using jSon/javaScript like structures in VBA",
+                "url": "http://excelramblings.blogspot.com/2013/03/using-jsonjavascript-like-structures-in.html"
+            },
+            {
+                "name": "VBA procedures for CIE LabLch and HSL color scheming",
+                "key": "4885079350110396129",
+                "title": "VBA procedures for CIE LabLch and HSL color scheming",
+                "url": "http://excelramblings.blogspot.com/2013/03/vba-procedures-for-cie-lablch-and-hsl.html"
+            },
+            {
+                "name": "Example of automatic code updating for VBA",
+                "key": "6071915669402514967",
+                "title": "Example of automatic code updating for VBA",
+                "url": "http://excelramblings.blogspot.com/2013/03/example-of-automatic-code-updating-for.html"
+            },
+            {
+                "name": "Inherit link colors from cells - D3 sankey from Excel",
+                "key": "726547650393306593",
+                "title": "Inherit link colors from cells - D3 sankey from Excel",
+                "url": "http://excelramblings.blogspot.com/2013/03/inherit-link-colors-from-cells-d3.html"
+            },
+            {
+                "name": "API of the Day: facebook fql direct from Excel and Google APPs",
+                "key": "5123811479853799614",
+                "title": "API of the Day: facebook fql direct from Excel and Google APPs",
+                "url": "http://excelramblings.blogspot.com/2013/02/api-of-day-facebook-fql-direct-from.html"
+            },
+            {
+                "name": "Adventures in serializing VBA classes - automatically documenting your modules",
+                "key": "6716012737029926705",
+                "title": "Adventures in serializing VBA classes - automatically documenting your modules",
+                "url": "http://excelramblings.blogspot.com/2013/02/adventures-in-serializing-vba-classes.html"
+            },
+            {
+                "name": "Unused tube stations: discovered via scraperwiki- mapped with Excel and Google Maps",
+                "key": "5427050270676949521",
+                "title": "Unused tube stations: discovered via scraperwiki- mapped with Excel and Google Maps",
+                "url": "http://excelramblings.blogspot.com/2013/02/unused-tube-stations-discovered-via.html"
+            },
+            {
+                "name": "Scraperwiki horsemeat data to Sankey, via Excel.",
+                "key": "1432971951404195793",
+                "title": "Scraperwiki horsemeat data to Sankey, via Excel.",
+                "url": "http://excelramblings.blogspot.com/2013/02/scraperwiki-horsemeat-data-to-sankey.html"
+            },
+            {
+                "name": "'Hot doughnut' chart in Excel",
+                "key": "4672319171469145067",
+                "title": "'Hot doughnut' chart in Excel",
+                "url": "http://excelramblings.blogspot.com/2013/01/hot-doughnut-chart-in-excel.html"
+            },
+            {
+                "name": "Zoomable d3.js partition charts straight from Excel",
+                "key": "3428022872093664533",
+                "title": "Zoomable d3.js partition charts straight from Excel",
+                "url": "http://excelramblings.blogspot.com/2012/12/zoomable-d3js-partition-charts-straight.html"
+            },
+            {
+                "name": "Delegating processing to the cloud from Excel and other plafforms",
+                "key": "5084915138686054565",
+                "title": "Delegating processing to the cloud from Excel and other plafforms",
+                "url": "http://excelramblings.blogspot.com/2012/11/delegating-processing-to-cloud-from.html"
+            },
+            {
+                "name": "API library entry of the day: use builtwith.com to see how websites are built",
+                "key": "3359858520667095768",
+                "title": "API library entry of the day: use builtwith.com to see how websites are built",
+                "url": "http://excelramblings.blogspot.com/2012/10/api-library-entry-of-day-use.html"
+            },
+            {
+                "name": "Transforming data for d3 tree",
+                "key": "5274580566090877085",
+                "title": "Transforming data for d3 tree",
+                "url": "http://excelramblings.blogspot.com/2012/10/transforming-data-for-d3-tree.html"
+            },
+            {
+                "name": "scraperWiki API: The Daily REST library entry for Excel and GAScript ",
+                "key": "6575351954668085367",
+                "title": "scraperWiki API: The Daily REST library entry for Excel and GAScript ",
+                "url": "http://excelramblings.blogspot.com/2012/09/scraperwiki-api-daily-rest-library.html"
+            },
+            {
+                "name": "Google Currency API: The Daily REST library entry for Excel and GAScript ",
+                "key": "4994580672161240835",
+                "title": "Google Currency API: The Daily REST library entry for Excel and GAScript ",
+                "url": "http://excelramblings.blogspot.com/2012/09/google-currency-api-daily-rest-library.html"
+            },
+            {
+                "name": "Free Geo IP API: Excel and GAS - the Daily REST library entry",
+                "key": "104670723472085060",
+                "title": "Free Geo IP API: Excel and GAS - the Daily REST library entry",
+                "url": "http://excelramblings.blogspot.com/2012/08/free-geo-ip-api-tntry-for-excel-and.html"
+            },
+            {
+                "name": "rxNorm Drug API: The Daily REST library entry for Excel and GAScript",
+                "key": "8137495356837169352",
+                "title": "rxNorm Drug API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/rxnorm-drug-api-daily-rest-library.html"
+            },
+            {
+                "name": "url shortening API: The Daily REST library entry for Excel and GAScript",
+                "key": "657913774918876290",
+                "title": "url shortening API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/url-shortening-api-daily-rest-library.html"
+            },
+            {
+                "name": "Yahoo Geocoding API: The Daily REST library entry for Excel and GAScript",
+                "key": "1042050952602012497",
+                "title": "Yahoo Geocoding API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/yahoo-geocoding-api-daily-rest-library.html"
+            },
+            {
+                "name": "Passing complex arguments with default values in VBA - like jQuery $.extend()",
+                "key": "5268889960836965028",
+                "title": "Passing complex arguments with default values in VBA - like jQuery $.extend()",
+                "url": "http://excelramblings.blogspot.com/2012/08/passing-complex-arguments-with-default.html"
+            },
+            {
+                "name": "CrunchBase who works where API: The Daily REST library entry for Excel and GAScript",
+                "key": "7041019305984317833",
+                "title": "CrunchBase who works where API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/crunchbase-who-works-where-api-daily.html"
+            },
+            {
+                "name": "CrunchBase relationships API: The Daily REST library entry for Excel and GAScript",
+                "key": "292626387881550185",
+                "title": "CrunchBase relationships API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/crunchbase-relationships-api-daily-rest.html"
+            },
+            {
+                "name": "FAA airport status API: The Daily REST library entry for Excel and GAScript",
+                "key": "3292937950652084707",
+                "title": "FAA airport status API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/faa-airport-status-api-daily-rest.html"
+            },
+            {
+                "name": "duckduckgo disambiguation API: The Daily REST library entry for Excel and GAScript",
+                "key": "377238675252406108",
+                "title": "duckduckgo disambiguation API: The Daily REST library entry for Excel and GAScript",
+                "url": "http://excelramblings.blogspot.com/2012/08/duckduckgo-disambiguation-api-daily.html"
+            },
+            {
+                "name": "Thematic maps and other shape coloring in one line of code",
+                "key": "7387728853158957674",
+                "title": "Thematic maps and other shape coloring in one line of code",
+                "url": "http://excelramblings.blogspot.com/2012/08/thematic-maps-and-other-shape-coloring.html"
+            },
+            {
+                "name": "Page Rank REST API from Excel and Google Apps Script",
+                "key": "7380815954206829272",
+                "title": "Page Rank REST API from Excel and Google Apps Script",
+                "url": "http://excelramblings.blogspot.com/2012/07/page-rank-rest-api-from-excel-and.html"
+            },
+            {
+                "name": "Over 100 versions of cDataSet",
+                "key": "2237434219742140796",
+                "title": "Over 100 versions of cDataSet",
+                "url": "http://excelramblings.blogspot.com/2012/07/over-100-versions-of-cdataset.html"
+            },
+            {
+                "name": "Mapping Tweet Sentiments on a d3.js force chart (right out of Excel)",
+                "key": "201346058820204768",
+                "title": "Mapping Tweet Sentiments on a d3.js force chart (right out of Excel)",
+                "url": "http://excelramblings.blogspot.com/2012/06/mapping-tweet-sentiments-on-d3js-force.html"
+            },
+            {
+                "name": "jSon data for all F1 races straight into Excel",
+                "key": "4618409928727957547",
+                "title": "jSon data for all F1 races straight into Excel",
+                "url": "http://excelramblings.blogspot.com/2012/04/json-data-for-all-f1-races-straight.html"
+            },
+            {
+                "name": "OpenCorporate data Excel REST query",
+                "key": "6150035667400167206",
+                "title": "OpenCorporate data Excel REST query",
+                "url": "http://excelramblings.blogspot.com/2012/04/opencorporate-data-excel-rest-query.html"
+            },
+            {
+                "name": "Create a treeview from almost any Excel thing in one line of code",
+                "key": "1398781531716029236",
+                "title": "Create a treeview from almost any Excel thing in one line of code",
+                "url": "http://excelramblings.blogspot.com/2012/03/create-treeview-from-almost-any-excel.html"
+            },
+            {
+                "name": "Consolidating sheets in an Excel workbook",
+                "key": "2367044287604000325",
+                "title": "Consolidating sheets in an Excel workbook",
+                "url": "http://excelramblings.blogspot.com/2012/03/consolidating-sheets-in-excel-workbook.html"
+            },
+            {
+                "name": "Color Ramps and topographic maps in Excel",
+                "key": "4022101128861095727",
+                "title": "Color Ramps and topographic maps in Excel",
+                "url": "http://excelramblings.blogspot.com/2012/02/color-ramps-and-topographic-maps-in.html"
+            },
+            {
+                "name": "Create tag Clouds from twitter in Excel",
+                "key": "2965078953482993711",
+                "title": "Create tag Clouds from twitter in Excel",
+                "url": "http://excelramblings.blogspot.com/2012/01/create-tag-clouds-from-twitter-in-excel.html"
+            },
+            {
+                "name": "Creating heat maps with VBA/Excel",
+                "key": "334938000245687224",
+                "title": "Creating heat maps with VBA/Excel",
+                "url": "http://excelramblings.blogspot.com/2012/01/creating-heat-maps-with-vbaexcel.html"
+            },
+            {
+                "name": "Executing SQL from Excel and Data Abstraction",
+                "key": "397947582207514901",
+                "title": "Executing SQL from Excel and Data Abstraction",
+                "url": "http://excelramblings.blogspot.com/2012/01/executing-sql-from-excel-and-data.html"
+            },
+            {
+                "name": "TweetSentiments now in the cRest Excel library",
+                "key": "5412370960031409368",
+                "title": "TweetSentiments now in the cRest Excel library",
+                "url": "http://excelramblings.blogspot.com/2011/12/tweetsentiments-now-in-crest-excel.html"
+            },
+            {
+                "name": "WhatTheTrend twitter top 10 added to Excel cRest library",
+                "key": "4339074372917619622",
+                "title": "WhatTheTrend twitter top 10 added to Excel cRest library",
+                "url": "http://excelramblings.blogspot.com/2011/12/whatthetrend-twitter-top-10-added-to.html"
+            },
+            {
+                "name": "Rest - jSon - Excel in one line of code",
+                "key": "5701715313440992069",
+                "title": "Rest - jSon - Excel in one line of code",
+                "url": "http://excelramblings.blogspot.com/2011/11/rest-json-excel-in-one-line-of-code.html"
+            },
+            {
+                "name": "rest library for Excel",
+                "key": "4777144174497934061",
+                "title": "rest library for Excel",
+                "url": "http://excelramblings.blogspot.com/2011/11/rest-library-for-excel.html"
+            },
+            {
+                "name": "Excel-jSon-Excel in one line of code",
+                "key": "6700895007111540928",
+                "title": "Excel-jSon-Excel in one line of code",
+                "url": "http://excelramblings.blogspot.com/2011/10/excel-json-excel-in-one-line-of-code-on.html"
+            },
+            {
+                "name": "Retrieving data from Google Books",
+                "key": "403824494454135253",
+                "title": "Retrieving data from Google Books",
+                "url": "http://excelramblings.blogspot.com/2011/08/retrieving-data-from-google-books.html"
+            },
+            {
+                "name": "How to use cDataSet",
+                "key": "5212659125484142605",
+                "title": "How to use cDataSet",
+                "url": "http://excelramblings.blogspot.com/2011/08/how-to-use-cdataset.html"
+            },
+            {
+                "name": "Creating JSON using data abstraction classes",
+                "key": "4291015243884369021",
+                "title": "Creating JSON using data abstraction classes",
+                "url": "http://excelramblings.blogspot.com/2011/06/creating-json-using-data-abstraction.html"
+            },
+            {
+                "name": "Abstracting Excel Data",
+                "key": "5781926054518429618",
+                "title": "Abstracting Excel Data",
+                "url": "http://excelramblings.blogspot.com/2011/06/abstracting-excel-data.html"
+            }
+        ]
+    }
+]

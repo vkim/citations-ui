@@ -1,0 +1,3 @@
+This is designed to demonstrate generating tool tips with an HTML link in them. The graph is based on a simple line graph per the book [D3 Tips and Tricks](https://leanpub.com/D3-Tips-and-Tricks) and was generated in response to a question on the [d3noob.org](http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html?showComment=1398815399178#c9184043422573851185) blog.
+
+The main differences with this example are the addition of the `<a>` tags in the appropriate places as commented, the removal of the `pointer-events: none` attribute in the `style section and the slight amending of the transitions of the html divs so that the tool tips stay in place while the mouse moves off the dot.
