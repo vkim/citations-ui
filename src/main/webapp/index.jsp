@@ -13,7 +13,7 @@
             <div class="pull-left">
 
                 <ul ng-repeat="item in back_citations_left">
-                    <li>
+                    <li ng-click="next(item)">
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">

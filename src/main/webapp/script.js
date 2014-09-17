@@ -1,60 +1,65 @@
 
 var esApp = angular.module('esApp', []);
 
-/*esApp.config(function($routeProvider) {
-    $routeProvider
-
-        // route for the home page
-        .when('/', {
-            templateUrl : 'pages/main.html',
-            controller  : 'mainController'
-        });
-});*/
-
 
 esApp.controller('mainController', function($scope, $http) {
 
-    var request = $http({
-        method: "post",
-        url: "references",
-        data: {
-            citation: "Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716."
+    $scope.next = function(reference) {
+
+        if(reference) {
+            getReferences(reference["citation"]);
         }
-    });
 
-    request.success(
-        function( data ) {
+    };
 
-            //if back links exist
-            if(data && data.backwards) {
+    //"Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716."
+    function getReferences(cite) {
 
-                var backwards_right = data.backwards;
+        if(cite) {
 
-                var backwards_left = backwards_right.splice(0, Math.floor(backwards_right.length / 2));
-                $scope.back_citations_left = backwards_left;
-                $scope.back_citations_right = backwards_right;
-            }
-            else {
-                $scope.back_citations_left = [];
-                $scope.back_citations_right = [];
-            }
+            $http({
+                method: "post",
+                url: "references",
+                data: {
+                    citation: cite
+                }
+            }).success(
+                function( data ) {
 
-            //if forward links exist
-            if(data && data.forwards) {
+                    //if back links exist
+                    if(data && data.backwards) {
 
-                var forwards_right = data.forwards;
+                        var backwards_right = data.backwards;
 
-                var forwards_left = forwards_right.splice(0, Math.floor(forwards_right.length / 2));
-                $scope.forward_citations_left = forwards_left;
-                $scope.forward_citations_right = forwards_right;
-            }
-            else {
-                $scope.forward_citations_left = [];
-                $scope.forward_citations_right = [];
-            }
+                        var backwards_left = backwards_right.splice(0, Math.floor(backwards_right.length / 2));
+                        $scope.back_citations_left = backwards_left;
+                        $scope.back_citations_right = backwards_right;
+                    }
+                    else {
+                        $scope.back_citations_left = [];
+                        $scope.back_citations_right = [];
+                    }
 
+                    //if forward links exist
+                    if(data && data.forwards) {
+
+                        var forwards_right = data.forwards;
+
+                        var forwards_left = forwards_right.splice(0, Math.floor(forwards_right.length / 2));
+                        $scope.forward_citations_left = forwards_left;
+                        $scope.forward_citations_right = forwards_right;
+                    }
+                    else {
+                        $scope.forward_citations_left = [];
+                        $scope.forward_citations_right = [];
+                    }
+
+                }
+            );
         }
-    );
+    };
+
+    getReferences("Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.");
 
 
     /*$scope.back_citations_left = [

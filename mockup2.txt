@@ -1,0 +1,166 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1485" measuredH="735" mockupW="1257" mockupH="692">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="228" y="43" w="1257" h="692" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="250" y="125" w="399" h="594" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Arrow" x="672" y="360" w="65" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="946" y="362" w="65" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="619" y="143" w="-1" h="562" measuredW="16" measuredH="100" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextArea" x="757" y="320" w="184" h="90" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Author1%2C%20author2%2C%20author3%0A%20%20Title%0A%20%20Year</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::SearchBox" x="474" y="69" w="604" h="-1" measuredW="120" measuredH="25" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>citation</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="1093" y="69" w="72" h="25" measuredW="62" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>search</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="186" w="339" h="41" measuredW="200" measuredH="140" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <color>14540253</color>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="227" w="339" h="41" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="141" w="343" h="45" measuredW="200" measuredH="140" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <color>16770457</color>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Canvas" x="1034" y="119" w="399" h="594" measuredW="100" measuredH="70" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1403" y="137" w="-1" h="562" measuredW="16" measuredH="100" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Arrow" x="581" y="125" w="156" h="36" measuredW="150" measuredH="100" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>1</curvature>
+        <direction>bottom</direction>
+        <leftArrow>true</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::TextArea" x="737" y="121" w="224" h="120" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <color>16770457</color>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.%201993%3B83%3A1712-1716.%0A2009%0AJamia</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="268" w="339" h="41" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="309" w="339" h="41" measuredW="200" measuredH="140" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="350" w="339" h="41" measuredW="200" measuredH="140" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="391" w="339" h="41" measuredW="200" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="432" w="339" h="41" measuredW="200" measuredH="140" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="473" w="339" h="41" measuredW="200" measuredH="140" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::TextArea" x="265" y="514" w="339" h="41" measuredW="200" measuredH="140" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="143" w="339" h="41" measuredW="200" measuredH="140" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="184" w="339" h="41" measuredW="200" measuredH="140" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="225" w="339" h="41" measuredW="200" measuredH="140" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="266" w="339" h="41" measuredW="200" measuredH="140" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="307" w="339" h="41" measuredW="200" measuredH="140" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="348" w="339" h="41" measuredW="200" measuredH="140" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="389" w="339" h="41" measuredW="200" measuredH="140" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::TextArea" x="1055" y="430" w="339" h="41" measuredW="200" measuredH="140" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Sullivan%20KM%2C%20Monto%20AS%2C%20Longini%20IM.%20Estimates%20of%20the%20US%20health%20impact%20of%20influenza.%20Am%20J%20Public%20Health.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
