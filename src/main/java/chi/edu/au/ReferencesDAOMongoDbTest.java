@@ -43,20 +43,45 @@ public class ReferencesDAOMongoDbTest {
     @Test
     public void forwardsShouldExist() throws Exception {
 
-        String citationStr = dao.getReferencesByCitation("Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269.");
+        String citationStr = dao.getReferencesByCitation("qwer");
 
         JsonParser jsonParser = new JsonParser();
-        JsonObject jo = (JsonObject)jsonParser.parse(citationStr);
+        JsonObject jo = (JsonObject) jsonParser.parse(citationStr);
 
         JsonArray forwards = jo.getAsJsonArray("forwards");
 
-        for(JsonElement id: forwards) {
+        System.out.println("CITATION: " + citationStr);
+        assertEquals(forwards.size(), 4);
+
+        /*for(JsonElement id: forwards) {
 
             String reference = dao.getById(id.getAsJsonObject().get("$oid").getAsString());
             System.out.println("reference: " + reference);
 
             assertNotNull(reference);
-        }
+        }*/
+    }
+
+    @Test
+    public void backwardsShouldExist() throws Exception {
+
+        String citationStr = dao.getReferencesByCitation("Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.");
+
+        JsonParser jsonParser = new JsonParser();
+        JsonObject jo = (JsonObject)jsonParser.parse(citationStr);
+
+        JsonArray forwards = jo.getAsJsonArray("backwards");
+
+//        System.out.println("CITATION: " + citationStr);
+        assertEquals(forwards.size(), 62);
+
+        /*for(JsonElement id: forwards) {
+
+            String reference = dao.getById(id.getAsJsonObject().get("$oid").getAsString());
+            System.out.println("reference: " + reference);
+
+            assertNotNull(reference);
+        }*/
 
     }
 

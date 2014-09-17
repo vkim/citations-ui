@@ -18,7 +18,7 @@ esApp.controller('mainController', function($scope, $http) {
         method: "post",
         url: "references",
         data: {
-            citation: "Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269."
+            citation: "Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716."
         }
     });
 
