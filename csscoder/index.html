@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="search_section">
+		<input type="text" name="search" placeholder="citation">
+		<span class="search_icon">&nbsp;</span>
+		<input type="button" name="search_button" value="search">	
+	</div><!-- search_section -->
     <div class="wrapper" ng-controller="mainController">
         <!-- Column 1 -->
         <div class="col1">
@@ -22,8 +27,8 @@
                         <br/> Jamia
                     </li>
                 </ul>
-
-                <ul ng-repeat="item in back_citations_left">
+			<!--Class gray on ul adds Gray background on that block -->
+                <ul ng-repeat="item in back_citations_left" class="gray">
                     <li>
                         Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
                     </li>
@@ -115,7 +120,7 @@
                     </li>
                 </ul>
 
-                <ul ng-repeat="item in back_citations_right">
+                <ul ng-repeat="item in back_citations_right" >
                     <li>
                         5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
                     </li>
@@ -137,7 +142,7 @@
                     </li>
                 </ul>
 
-                <ul ng-repeat="item in back_citations_right">
+                <ul ng-repeat="item in back_citations_right" class="gray">
                     <li>
                         5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
                     </li>
@@ -218,35 +223,190 @@
         <div class="col3">
 
             <div class="pull-left">
-                <ul ng-repeat="item in forward_citations_left">
+
+                <ul ng-repeat="item in back_citations_left">
                     <li>
-                        {{item.citation}}
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
                     </li>
                     <li class="_hover">
-                        Title <br>
-                        Author1, author2, author3, author4 <br>
-                        Year <br>
-                        Journal
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
                     </li>
                 </ul>
+			<!--Class gray on ul adds Gray background on that block -->
+                <ul ng-repeat="item in back_citations_left" class="gray">
+                    <li>
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                    </li>
+                    <li class="_hover">
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_left">
+                    <li>
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                    </li>
+                    <li class="_hover">
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_left">
+                    <li>
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                    </li>
+                    <li class="_hover">
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_left">
+                    <li>
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                    </li>
+                    <li class="_hover">
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_left">
+                    <li>
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                    </li>
+                    <li class="_hover">
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_left">
+                    <li>
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                    </li>
+                    <li class="_hover">
+                        Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.
+                        <br/> 2014
+                        <br/> Jamia
+                    </li>
+                </ul>
+
             </div>
 
             <div class="pull-right">
-                <ul ng-repeat="item in forward_citations_right">
+
+                <ul ng-repeat="item in back_citations_right">
                     <li>
-                        {{item.citation}}
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
                     </li>
                     <li class="_hover">
-                        Title <br>
-                        Author1, author2, author3, author4 <br>
-                        Year <br>
-                        Journal
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
                     </li>
                 </ul>
+
+                <ul ng-repeat="item in back_citations_right">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right" >
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right" class="gray">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
+                <ul ng-repeat="item in back_citations_right">
+                    <li>
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis
+                    </li>
+                    <li class="_hover">
+                        5954845Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults,Economic Analysis of Influenza Vaccination and Antiviral Treatment for Healthy Working Adults
+                        <br/> 2014
+                        <br/> Journal
+                    </li>
+                </ul>
+
             </div>
 
-        </div>
-        <!--end column 3 -->
+        </div><!--end column 3 -->
 
     </div>
     <script src="angular.js"></script>

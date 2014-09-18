@@ -6,10 +6,16 @@ esApp.controller('mainController', function($scope, $http) {
 
     $scope.next = function(reference) {
 
-        if(reference) {
+        if(reference && reference["citation"]) {
             getReferences(reference["citation"]);
         }
 
+    };
+
+    $scope.search = function(search_string) {
+        if(search_string) {
+            getReferences(search_string);
+        }
     };
 
     //"Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716."
@@ -26,8 +32,20 @@ esApp.controller('mainController', function($scope, $http) {
             }).success(
                 function( data ) {
 
+                    $scope.main = data;
+
                     //if back links exist
                     if(data && data.backwards) {
+
+                        for (var i in data.backwards) {
+                            if (data.backwards[i].hasOwnProperty('forwards') && data.backwards[i].forwards.length < 2 && !data.backwards[i].backwards) {
+
+                                if(data.backwards[i].backwards) console.log("data.backwards[i].backwards: " + data.backwards[i].backwards.length);
+                                if(data.backwards[i].forwards) console.log("data.backwards[i].forwards: " + data.backwards[i].forwards.length);
+
+                                data.backwards[i].isgrey = 'gray';
+                            }
+                        }
 
                         var backwards_right = data.backwards;
 
@@ -42,6 +60,12 @@ esApp.controller('mainController', function($scope, $http) {
 
                     //if forward links exist
                     if(data && data.forwards) {
+
+                        for (var i in data.forwards) {
+                            if (!data.forwards[i].hasOwnProperty("backwards") && !data.forwards[i].hasOwnProperty("forwards")) {
+                                data.forwards[i].isgrey = 'gray';
+                            }
+                        }
 
                         var forwards_right = data.forwards;
 
@@ -60,96 +84,6 @@ esApp.controller('mainController', function($scope, $http) {
     };
 
     getReferences("Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.");
-
-
-    /*$scope.back_citations_left = [
-        {
-            "MID":153,
-            "citation":"Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269.",
-            "unknown0":"10.1097/01.inf.0000144680.39895.ce",
-            "title":"Pandemic Influenza: Is an Antiviral Response Realistic?",
-            "authors":"[[u'Frederick', u'G.', u'Hayden']]",
-            "journal":"Pediatric Infectious Disease Journal",
-            "year":2004,
-            "url":"[u'http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage&an=00006454-200411001-00012']"
-        },
-        {
-            "MID":153,
-            "citation":"Matrosovich MN, Matrosovich TY, Gray T. Neuraminidase is important for the initiation of influenza virus infection in human... J Virol 2004;78:12665-7.",
-            "unknown0":"10.1128/JVI.78.22.12665-12667.2004",
-            "title":"Neuraminidase Is Important for the Initiation of Influenza Virus Infection in Human Airway Epithelium",
-            "authors":"[[u'Mikhail', u'N.', u'Matrosovich'], [u'Tatyana', u'Y.', u'Matrosovich'], [u'Thomas', u'', u'Gray'], [u'Noel', u'A.', u'Roberts'], [u'Hans-Dieter', u'', u'Klenk']]",
-            "journal":"Journal of Virology",
-            "year":2004,
-            "url":"[u'http://jvi.asm.org/cgi/reprint/78/22/12665.pdf', u'http://jvi.asm.org/cgi/doi/10.1128/JVI.78.22.12665-12667.2004']"
-        }];
-
-    $scope.back_citations_right = [
-        {
-            "MID":153,
-            "citation":"Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269.",
-            "unknown0":"10.1097/01.inf.0000144680.39895.ce",
-            "title":"Pandemic Influenza: Is an Antiviral Response Realistic?",
-            "authors":"[[u'Frederick', u'G.', u'Hayden']]",
-            "journal":"Pediatric Infectious Disease Journal",
-            "year":2004,
-            "url":"[u'http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage&an=00006454-200411001-00012']"
-        },
-        {
-            "MID":153,
-            "citation":"Matrosovich MN, Matrosovich TY, Gray T. Neuraminidase is important for the initiation of influenza virus infection in human... J Virol 2004;78:12665-7.",
-            "unknown0":"10.1128/JVI.78.22.12665-12667.2004",
-            "title":"Neuraminidase Is Important for the Initiation of Influenza Virus Infection in Human Airway Epithelium",
-            "authors":"[[u'Mikhail', u'N.', u'Matrosovich'], [u'Tatyana', u'Y.', u'Matrosovich'], [u'Thomas', u'', u'Gray'], [u'Noel', u'A.', u'Roberts'], [u'Hans-Dieter', u'', u'Klenk']]",
-            "journal":"Journal of Virology",
-            "year":2004,
-            "url":"[u'http://jvi.asm.org/cgi/reprint/78/22/12665.pdf', u'http://jvi.asm.org/cgi/doi/10.1128/JVI.78.22.12665-12667.2004']"
-        }];
-
-    $scope.forward_citations_left = [
-        {
-            "MID":153,
-            "citation":"Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269.",
-            "unknown0":"10.1097/01.inf.0000144680.39895.ce",
-            "title":"Pandemic Influenza: Is an Antiviral Response Realistic?",
-            "authors":"[[u'Frederick', u'G.', u'Hayden']]",
-            "journal":"Pediatric Infectious Disease Journal",
-            "year":2004,
-            "url":"[u'http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage&an=00006454-200411001-00012']"
-        },
-        {
-            "MID":153,
-            "citation":"Matrosovich MN, Matrosovich TY, Gray T. Neuraminidase is important for the initiation of influenza virus infection in human... J Virol 2004;78:12665-7.",
-            "unknown0":"10.1128/JVI.78.22.12665-12667.2004",
-            "title":"Neuraminidase Is Important for the Initiation of Influenza Virus Infection in Human Airway Epithelium",
-            "authors":"[[u'Mikhail', u'N.', u'Matrosovich'], [u'Tatyana', u'Y.', u'Matrosovich'], [u'Thomas', u'', u'Gray'], [u'Noel', u'A.', u'Roberts'], [u'Hans-Dieter', u'', u'Klenk']]",
-            "journal":"Journal of Virology",
-            "year":2004,
-            "url":"[u'http://jvi.asm.org/cgi/reprint/78/22/12665.pdf', u'http://jvi.asm.org/cgi/doi/10.1128/JVI.78.22.12665-12667.2004']"
-        }];
-
-    $scope.forward_citations_right = [
-        {
-            "MID":153,
-            "citation":"Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269.",
-            "unknown0":"10.1097/01.inf.0000144680.39895.ce",
-            "title":"Pandemic Influenza: Is an Antiviral Response Realistic?",
-            "authors":"[[u'Frederick', u'G.', u'Hayden']]",
-            "journal":"Pediatric Infectious Disease Journal",
-            "year":2004,
-            "url":"[u'http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage&an=00006454-200411001-00012']"
-        },
-        {
-            "MID":153,
-            "citation":"Matrosovich MN, Matrosovich TY, Gray T. Neuraminidase is important for the initiation of influenza virus infection in human... J Virol 2004;78:12665-7.",
-            "unknown0":"10.1128/JVI.78.22.12665-12667.2004",
-            "title":"Neuraminidase Is Important for the Initiation of Influenza Virus Infection in Human Airway Epithelium",
-            "authors":"[[u'Mikhail', u'N.', u'Matrosovich'], [u'Tatyana', u'Y.', u'Matrosovich'], [u'Thomas', u'', u'Gray'], [u'Noel', u'A.', u'Roberts'], [u'Hans-Dieter', u'', u'Klenk']]",
-            "journal":"Journal of Virology",
-            "year":2004,
-            "url":"[u'http://jvi.asm.org/cgi/reprint/78/22/12665.pdf', u'http://jvi.asm.org/cgi/doi/10.1128/JVI.78.22.12665-12667.2004']"
-        }];*/
-
 });
 
 

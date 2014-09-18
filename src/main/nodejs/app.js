@@ -1,12 +1,7 @@
 var MongoClient = require('mongodb').MongoClient
     , format = require('util').format
     ,fs = require('fs')
-    ,Q = require('q')
-    ,sem = require('semaphore')(1);
-
-var csv = require("fast-csv");
-
-var stream = fs.createReadStream("data.csv");
+    ,Q = require('q');
 
 MongoClient.connect('mongodb://127.0.0.1:27017/cr', function(err, db) {
     if(err) throw err;
@@ -104,60 +99,70 @@ MongoClient.connect('mongodb://127.0.0.1:27017/cr', function(err, db) {
         return deferred.promise;
     }
 
-    var csvStream = csv({headers: true})
-        .on("data", function(rec){ //for each rec : records
+    var files = fs.readdirSync("../../../demo/");
+    for(var i in files) {
 
-            sem.take(function() {
+        var stream = fs.createReadStream("../../../demo/" + files[i]);
+        var sem = require('semaphore')(1)
+        var csvStream = require("fast-csv")({headers: true})
+            .on("data", function(rec){ //for each rec : records
 
-                //    if(rec is forward) {
-                if(rec && rec.citation != 'cited-by') {
+                sem.take(function() {
 
+                    //    if(rec is forward) {
+                    if(rec && rec.relation != 'cited-by') {
 
-                    Q.spread([getDocumentByDOI(rec.source), getDocumentByDOI(rec.ID)]
-                        ,function(main_doc, forward_doc) {
+                        Q.spread([getDocumentByDOI(rec.source), getDocumentByDOI(rec.ID)]
+                            ,function(main_doc, forward_doc) {
 
-                            addForwardTo(main_doc, forward_doc);
-                            addBackwardTo(forward_doc, main_doc);
+                                addForwardTo(main_doc, forward_doc);
+                                addBackwardTo(forward_doc, main_doc);
 
-                            //populate details
-                            forward_doc.citation = rec.citation;
-                            forward_doc.title = rec.title;
-                            forward_doc.authors = rec.authors;
-                            forward_doc.journal = rec.journal;
-                            forward_doc.year = rec.year;
-                            forward_doc.fulltext_link = rec.fulltext_link;
-                            forward_doc.fulltext_location = rec.fulltext_location;
+                                //populate details
+                                forward_doc.citation = rec.citation;
+                                forward_doc.title = rec.title;
+                                forward_doc.authors = rec.authors;
+                                forward_doc.journal = rec.journal;
+                                forward_doc.year = rec.year;
+                                forward_doc.fulltext_online_link = rec.fulltext_online_link;
+                                forward_doc.fulltext_location = rec.fulltext_location;
 
-                            Q.spread([saveOrUpdate(main_doc), saveOrUpdate(forward_doc)], function() {
-                                sem.leave();
+                                Q.spread([saveOrUpdate(main_doc), saveOrUpdate(forward_doc)], function() {
+                                    sem.leave();
+                                });
+                            })
+
+                    } else { // 2 -> 1
+
+                        Q.spread([getDocumentByDOI(rec.source), getDocumentByDOI(rec.ID)]
+                            ,function(main_doc, backward_doc) {
+
+                                addBackwardTo(main_doc, backward_doc);
+                                addForwardTo(backward_doc, main_doc);
+
+                                backward_doc.citation = rec.citation;
+                                backward_doc.title = rec.title;
+                                backward_doc.authors = rec.authors;
+                                backward_doc.journal = rec.journal;
+                                backward_doc.year = rec.year;
+                                backward_doc.fulltext_online_link = rec.fulltext_online_link;
+                                backward_doc.fulltext_location = rec.fulltext_location;
+
+                                Q.spread([saveOrUpdate(main_doc), saveOrUpdate(backward_doc)], function() {
+                                    sem.leave();
+                                });
                             });
-                        })
-
-                } else { // 2 -> 1
-
-                    Q.spread([getDocumentByDOI(rec.source), getDocumentByDOI(rec.ID)]
-                        ,function(main_doc, backward_doc) {
-
-                            addBackwardTo(main_doc, backward_doc);
-                            addForwardTo(backward_doc, main_doc);
-
-                            backward_doc.citation = rec.citation;
-                            backward_doc.title = rec.title;
-                            backward_doc.authors = rec.authors;
-                            backward_doc.journal = rec.journal;
-                            backward_doc.year = rec.year;
-                            backward_doc.fulltext_link = rec.fulltext_link;
-                            backward_doc.fulltext_location = rec.fulltext_location;
-
-                            Q.spread([saveOrUpdate(main_doc), saveOrUpdate(backward_doc)], function() {
-                                sem.leave();
-                            });
-                        });
-                }
+                    }
+                });
             });
-        });
+        stream.pipe(csvStream); /*.on('end', function () {
+            semForFiles.leave();
+         });;*/
 
-    stream.pipe(csvStream);
+//        console.log('file: ' + files[i]);
+    }
+
+
 
 //    db.close();
 });
