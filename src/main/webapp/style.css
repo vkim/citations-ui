@@ -112,9 +112,12 @@ body{
 	background:#ffe599 ;
 	height: auto;
 	cursor: pointer;
-	
-
 }
+.col1 ul:hover ._hover, .col3 ul:hover ._hover, .col1 ul:hover li, .col3 ul:hover li {
+    background: #ffe599;
+}
+
+
 .arrow{
 	display:inline-block;
 	font-size:35px;
@@ -182,9 +185,7 @@ input[name="search"]{
 
 }
 input[name="search_button"]{
-height:24px;
-
-
+    height:24px;
 }
 .search_icon{
 	background: url('search.png') no-repeat;
@@ -194,5 +195,11 @@ height:24px;
 	position:absolute;
 	left:10px;
 	top:5px;
+}
 
+.search_section{
+    width:630px;
+}
+input[name="search"]{
+    width:525px;
 }

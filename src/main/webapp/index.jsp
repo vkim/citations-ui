@@ -9,7 +9,7 @@
     <div class="search_section">
         <input type="text" name="search" ng-model="search_string" placeholder="citation">
         <span class="search_icon">&nbsp;</span>
-        <input type="button" name="search_button" ng-click="search(search_string)">
+        <input type="button" name="search_button" value="Search"  ng-click="search(search_string)">
     </div><!-- search_section -->
 
     <div class="wrapper">
