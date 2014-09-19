@@ -83,7 +83,7 @@ esApp.controller('mainController', function($scope, $http) {
         }
     };
 
-    getReferences("Sullivan KM, Monto AS, Longini IM. Estimates of the US health impact of influenza. Am J Public Health. 1993;83:1712-1716.");
+    getReferences("McElhaney, J., , The unmet need in the elderly: Designing new influenza vaccines for older adults, Vaccine, 2005");
 });
 
 

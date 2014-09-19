@@ -7,6 +7,7 @@ import com.google.gson.JsonArray;
 import com.mongodb.*;
 import org.bson.types.ObjectId;
 
+import java.io.File;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
@@ -51,11 +52,38 @@ public class ReferencesDAOMongoDb implements ReferencesDAO {
                 BasicDBObject query = new BasicDBObject();
                 query.put("_id", o);
                 DBObject item = references.findOne(query);
-                if(item != null) flist.add(item);
+                if(item != null) {
+                    
+                    addSourceDocumentFilename(item);
+                    flist.add(item);
+                }
             }
         }
 
         main.put("forwards", flist);
+    }
+
+    final static String[] extensions = new String[] {".pdf", ".html"};
+
+    private void addSourceDocumentFilename(DBObject item) {
+
+        if(item != null && item.get("doi") != null) {
+            for(String ex : extensions) {
+
+                String fileName = (item.get("doi") + ex).replaceAll("/", "~");
+                String fullPathFileName = SparkApplicationStarter.filesLocation + fileName;
+                System.out.println("Checking FILE path: " + fullPathFileName);
+
+                if(new File(fullPathFileName).exists()) {
+
+                    System.out.println("!!!!FOUND: " + fullPathFileName);
+
+                    item.put("source_file", fileName);
+
+                    break;
+                }
+            }
+        }
     }
 
     private void extractBackwards(DBObject main) {
@@ -66,7 +94,11 @@ public class ReferencesDAOMongoDb implements ReferencesDAO {
                 BasicDBObject query = new BasicDBObject();
                 query.put("_id", o);
                 DBObject item = references.findOne(query);
-                if(item != null) blist.add(item);
+                if(item != null) {
+
+                    addSourceDocumentFilename(item);
+                    blist.add(item);
+                }
             }
         }
 

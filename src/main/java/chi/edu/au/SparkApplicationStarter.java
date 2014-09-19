@@ -7,6 +7,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import java.io.BufferedReader;
+import java.io.*;
 import java.net.UnknownHostException;
 
 import static spark.Spark.get;
@@ -18,6 +19,7 @@ public class SparkApplicationStarter implements spark.servlet.SparkApplication {
 
 
     ReferencesDAO dao;
+    final static String filesLocation = "/home/citations/";
 
     public SparkApplicationStarter() throws UnknownHostException {
         dao = new ReferencesDAOMongoDb();
@@ -54,6 +56,43 @@ public class SparkApplicationStarter implements spark.servlet.SparkApplication {
             }
 
             return refs;
+        });
+
+        get("/pdf/:source_file", (request, response) -> {
+
+            String fileName = request.params(":source_file");
+
+            File fullNameFile = new File(filesLocation + fileName);
+
+            if(fullNameFile.exists()) {
+                response.raw().setContentType("application/pdf");
+                response.raw().addHeader("Content-Disposition", "attachment; filename=" + fileName);
+                response.raw().setContentLength((int) fullNameFile.length());
+
+                FileInputStream fileInputStream = null;
+                try {
+                    fileInputStream = new FileInputStream(fullNameFile);
+                    OutputStream responseOutputStream = response.raw().getOutputStream();
+
+                    int bytes;
+                    while ((bytes = fileInputStream.read()) != -1) {
+                        responseOutputStream.write(bytes);
+                    }
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        fileInputStream.close();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            return "";
         });
 
         System.out.println("Initializing 2");

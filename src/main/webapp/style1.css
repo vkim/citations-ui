@@ -15,14 +15,6 @@ body{
 
 }
 
-.clearfix:after {
-	clear: both;
-}
-
-.clearfix:before {
-	content: '';
-	display: table;
-}
 
 .col1, .col2, .col3{
 	width:31%;
@@ -62,8 +54,7 @@ body{
 	border-bottom: none;
 	list-style-type: none;
 	cursor:pointer;
-	position: relative;
-
+	
 
 }
 
@@ -108,18 +99,12 @@ body{
 ._hover{
 	position: absolute;
 	top:0;
-	left:188px;
+	left:41%;
 	display: none;
 	width: 190px !important;
 	padding-left:5px;
-	z-index: 10;
-	border-left: 2px solid;
-}
 
-.pull-right > ul > li._hover {
-    border-left: 0 none;
-    border-right: 2px solid;
-    left: -197px;
+
 }
 
 .col1 ul:hover ._hover, .col3 ul:hover ._hover,.col1 ul:hover,.col3 ul:hover {
