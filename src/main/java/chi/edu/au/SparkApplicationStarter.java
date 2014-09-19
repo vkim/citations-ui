@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+import java.io.BufferedReader;
 import java.net.UnknownHostException;
 
 import static spark.Spark.get;
@@ -33,7 +34,16 @@ public class SparkApplicationStarter implements spark.servlet.SparkApplication {
 
         post("/references", "application/json", (request, response) -> {
 
-            JsonElement jsonElement = new JsonParser().parse(request.body());
+            StringBuffer jb = new StringBuffer();
+            String line = null;
+            try {
+                BufferedReader reader = request.raw().getReader();
+                while ((line = reader.readLine()) != null)
+                    jb.append(line);
+            } catch (Exception e) { /*report an error*/ }
+
+
+            JsonElement jsonElement = new JsonParser().parse(jb.toString());
             String citation = jsonElement.getAsJsonObject().get("citation").getAsString();
 
             String refs = "{}";

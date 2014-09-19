@@ -22,7 +22,7 @@ public class ReferencesDAOMongoDbTest {
     @Test
     public void testGetReferencesByCitation() throws Exception {
 
-        String citation = dao.getReferencesByCitation("Hayden FG. Pandemic influenza: is an antiviral response realistic? Pediatr Infect Dis J 2004;23:Suppl:S262-S269.");
+        String citation = dao.getReferencesByCitation("Jain S, Kamimoto L, Bramley AM et al. Hospitalized patients with 2009 H1N1 influenza in the United States, April-June 2009. N Engl J Med 2009; 361: 1935–44.");
 
         assertNotNull(citation);
     }
