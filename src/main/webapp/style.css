@@ -15,11 +15,19 @@ body{
 
 }
 
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix:before {
+	content: '';
+	display: table;
+}
 
 .col1, .col2, .col3{
 	width:31%;
 	height:98%;
-	overflow:auto;
+	/*overflow:auto;*/
 	padding: 10px;
 	border:1px solid black;
 
@@ -54,7 +62,8 @@ body{
 	border-bottom: none;
 	list-style-type: none;
 	cursor:pointer;
-	
+	position: relative;
+
 
 }
 
@@ -99,12 +108,12 @@ body{
 ._hover{
 	position: absolute;
 	top:0;
-	left:41%;
+	left:188px;
 	display: none;
 	width: 190px !important;
 	padding-left:5px;
-
-
+	z-index: 10;
+	border-left: 2px solid;
 }
 
 .col1 ul:hover ._hover, .col3 ul:hover ._hover,.col1 ul:hover,.col3 ul:hover {

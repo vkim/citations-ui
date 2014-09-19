@@ -2,7 +2,7 @@
 <html lang="en" ng-app="esApp">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Title1</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="mainController">
@@ -12,7 +12,7 @@
         <input type="button" name="search_button" value="Search"  ng-click="search(search_string)">
     </div><!-- search_section -->
 
-    <div class="wrapper">
+    <div class="wrapper clearfix">
         <!-- Column 1 -->
         <div class="col1">
 
@@ -26,8 +26,10 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation }} <br/> <br/>
-                        <a href="#">PDF</a>
+                        <div>
+                            {{item.citation }} <br/> <br/>
+                            <a ng-if="item.source_file" target="_blank" href="pdf/{{item.source_file}}">PDF/html</a>
+                        </div>
                     </li>
                 </ul>
 
@@ -43,8 +45,10 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation }} <br/> <br/>
-                        <a href="#">PDF</a>
+                        <div>
+                            {{item.citation }} <br/> <br/>
+                            <a ng-if="item.source_file" target="_blank" href="pdf/{{item.source_file}}">PDF/html</a>
+                        </div>
                     </li>
                 </ul>
 
@@ -80,8 +84,10 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation }} <br/> <br/>
-                        <a href="#">PDF</a>
+                        <div>
+                            {{item.citation }} <br/> <br/>
+                            <a ng-if="item.source_file" target="_blank" href="pdf/{{item.source_file}}">PDF/html</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -95,8 +101,10 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation }} <br/> <br/>
-                        <a href="#">PDF</a>
+                        <div>
+                            {{item.citation }} <br/> <br/>
+                            <a ng-if="item.source_file" target="_blank" href="pdf/{{item.source_file}}">PDF/html</a>
+                        </div>
                     </li>
                 </ul>
             </div>

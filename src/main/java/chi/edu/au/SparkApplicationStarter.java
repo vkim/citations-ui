@@ -6,10 +6,12 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+import java.io.*;
 import java.net.UnknownHostException;
 
 import static spark.Spark.get;
 import static spark.Spark.post;
+import static spark.SparkBase.externalStaticFileLocation;
 import static spark.SparkBase.setPort;
 import static spark.SparkBase.staticFileLocation;
 
@@ -17,6 +19,7 @@ public class SparkApplicationStarter implements spark.servlet.SparkApplication {
 
 
     ReferencesDAO dao;
+    final static String filesLocation = "/home/citations/";
 
     public SparkApplicationStarter() throws UnknownHostException {
         dao = new ReferencesDAOMongoDb();
@@ -27,6 +30,8 @@ public class SparkApplicationStarter implements spark.servlet.SparkApplication {
     public void init() {
 
 //        staticFileLocation("/public"); // Static files
+
+//        externalStaticFileLocation("/home/citations");
 
         System.out.println("Initializing SPARK!!!!");
 //        setPort(9090);
@@ -44,6 +49,43 @@ public class SparkApplicationStarter implements spark.servlet.SparkApplication {
             }
 
             return refs;
+        });
+
+        get("/pdf/:source_file", (request, response) -> {
+
+            String fileName = request.params(":source_file");
+
+            File fullNameFile = new File(filesLocation + fileName);
+
+            if(fullNameFile.exists()) {
+                response.raw().setContentType("application/pdf");
+                response.raw().addHeader("Content-Disposition", "attachment; filename=" + fileName);
+                response.raw().setContentLength((int) fullNameFile.length());
+
+                FileInputStream fileInputStream = null;
+                try {
+                    fileInputStream = new FileInputStream(fullNameFile);
+                    OutputStream responseOutputStream = response.raw().getOutputStream();
+
+                    int bytes;
+                    while ((bytes = fileInputStream.read()) != -1) {
+                        responseOutputStream.write(bytes);
+                    }
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        fileInputStream.close();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            return "";
         });
 
         System.out.println("Initializing 2");
