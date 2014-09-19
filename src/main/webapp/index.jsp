@@ -26,7 +26,8 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation }}
+                        {{item.citation }} <br/> <br/>
+                        <a href="#">PDF</a>
                     </li>
                 </ul>
 
@@ -42,7 +43,8 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation }}
+                        {{item.citation }} <br/> <br/>
+                        <a href="#">PDF</a>
                     </li>
                 </ul>
 
@@ -78,7 +80,8 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation}}
+                        {{item.citation }} <br/> <br/>
+                        <a href="#">PDF</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +95,8 @@
                         {{item.citation | limitTo: 150}}
                     </li>
                     <li class="_hover">
-                        {{item.citation}}
+                        {{item.citation }} <br/> <br/>
+                        <a href="#">PDF</a>
                     </li>
                 </ul>
             </div>
