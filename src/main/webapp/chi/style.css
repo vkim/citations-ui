@@ -27,7 +27,7 @@ body{
 .col1, .col2, .col3{
 	width:31%;
 	height:98%;
-	/*overflow:auto;*/
+	overflow:auto;
 	padding: 10px;
 	border:1px solid black;
 
@@ -113,6 +113,12 @@ body{
 	padding-left:5px;
 	z-index: 10;
 	border-left: 2px solid;
+}
+
+.pull-right > ul > li._hover {
+    border-left: 0 none;
+    border-right: 2px solid;
+    left: -197px;
 }
 
 .col1 ul:hover ._hover, .col3 ul:hover ._hover,.col1 ul:hover,.col3 ul:hover {
